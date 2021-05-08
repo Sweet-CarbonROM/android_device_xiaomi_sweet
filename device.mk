@@ -46,9 +46,11 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Device Settings
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
+    DeviceSettings
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/DeviceSettings/privapp-permissions-devicesettings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-devicesettings.xml
 
 # Display
 PRODUCT_COPY_FILES += \
